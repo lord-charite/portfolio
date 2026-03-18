@@ -15,4 +15,4 @@ npm run dev
 npm run deploy
 ```
 
-Your site will be live at `https://lord-charite.github.io/portfolio/`
+Site will be live at `https://lord-charite.github.io/portfolio/`
