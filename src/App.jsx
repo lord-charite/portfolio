@@ -555,7 +555,7 @@ const cssVars = `
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap');
 
   :root {
-    --bg: #faf9f7;
+    --bg: #e8e8e8;
     --fg: #1a1a18;
     --fg-secondary: #3d3d38;
     --muted: #8a8a82;
