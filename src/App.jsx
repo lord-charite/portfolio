@@ -573,10 +573,12 @@ const cssVars = `
   ::selection {
     background: #6b5c4c22;
   }
-
+  
+  /*
+  /* this will make background dark*/
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #141413;
+      --bg: #e8e8e8;
       --fg: #e8e6e1;
       --fg-secondary: #b5b3ad;
       --muted: #6b6b64;
@@ -584,6 +586,7 @@ const cssVars = `
       --border: #2a2a27;
     }
   }
+  */
 `;
 
 const styles = {
