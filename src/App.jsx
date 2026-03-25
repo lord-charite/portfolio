@@ -579,11 +579,11 @@ const cssVars = `
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #e8e8e8;
-      --fg: #e8e6e1;
-      --fg-secondary: #b5b3ad;
-      --muted: #6b6b64;
-      --accent: #c4a882;
-      --border: #2a2a27;
+      --fg: #1a1a18;
+      --fg-secondary: #3d3d38;
+      --muted: #8a8a82;
+      --accent: #6b5c4c;
+      --border: #c9c7c2;
     }
   }
   */
