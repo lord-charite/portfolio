@@ -560,7 +560,7 @@ const cssVars = `
     --fg-secondary: #3d3d38;
     --muted: #8a8a82;
     --accent: #6b5c4c;
-    --border: #e2e0db;
+    --border: #c9c7c2;
     --font-display: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'DM Sans', -apple-system, sans-serif;
     --font-mono: 'IBM Plex Mono', 'SF Mono', monospace;
@@ -573,20 +573,6 @@ const cssVars = `
   ::selection {
     background: #6b5c4c22;
   }
-  
-  /*
-  /* this will make background dark*/
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #e8e8e8;
-      --fg: #1a1a18;
-      --fg-secondary: #3d3d38;
-      --muted: #8a8a82;
-      --accent: #6b5c4c;
-      --border: #c9c7c2;
-    }
-  }
-  */
 `;
 
 const styles = {
