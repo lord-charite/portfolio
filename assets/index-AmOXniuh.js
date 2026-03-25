@@ -46,7 +46,7 @@ Error generating stack: `+i.message+`
     --fg-secondary: #3d3d38;
     --muted: #8a8a82;
     --accent: #6b5c4c;
-    --border: #e2e0db;
+    --border: #c9c7c2;
     --font-display: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'DM Sans', -apple-system, sans-serif;
     --font-mono: 'IBM Plex Mono', 'SF Mono', monospace;
@@ -59,18 +59,4 @@ Error generating stack: `+i.message+`
   ::selection {
     background: #6b5c4c22;
   }
-  
-  /*
-  /* this will make background dark*/
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #e8e8e8;
-      --fg: #e8e6e1;
-      --fg-secondary: #b5b3ad;
-      --muted: #6b6b64;
-      --accent: #c4a882;
-      --border: #2a2a27;
-    }
-  }
-  */
 `,ae={root:{background:"var(--bg)",color:"var(--fg)",minHeight:"100vh",fontFamily:"var(--font-body)"},nav:{position:"fixed",top:0,left:0,right:0,zIndex:100,display:"flex",justifyContent:"space-between",alignItems:"center",padding:"1.25rem 2rem",backdropFilter:"blur(12px)",WebkitBackdropFilter:"blur(12px)",background:"color-mix(in srgb, var(--bg) 85%, transparent)"},hero:{maxWidth:"1100px",margin:"0 auto",padding:"10rem 2rem 6rem"},heroTitle:{fontFamily:"var(--font-display)",fontSize:"clamp(3.5rem, 10vw, 7.5rem)",fontWeight:300,lineHeight:.95,letterSpacing:"-0.03em",margin:0},heroSub:{fontFamily:"var(--font-body)",fontSize:"clamp(0.95rem, 1.8vw, 1.1rem)",fontWeight:300,lineHeight:1.7,color:"var(--fg-secondary)",maxWidth:"520px",marginTop:"2.5rem"},section:{maxWidth:"1100px",margin:"0 auto",padding:"5rem 2rem"},sectionLabel:{fontFamily:"var(--font-mono)",fontSize:"0.7rem",letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--muted)",marginBottom:"2.5rem"},footer:{maxWidth:"1100px",margin:"0 auto",padding:"2rem",borderTop:"1px solid var(--border)"}};Yl.createRoot(document.getElementById("root")).render(C.jsx(kc.StrictMode,{children:C.jsx(Bd,{})}));
