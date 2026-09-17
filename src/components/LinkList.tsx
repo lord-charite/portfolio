@@ -23,7 +23,7 @@ export class LinkList extends Component<LinkListProps> {
             rel={link.rel}
             className="label linklist__link"
           >
-            {link.label} ↗
+            {link.label} {"\u2197"}
           </a>
         ))}
       </div>
