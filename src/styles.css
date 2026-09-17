@@ -326,6 +326,7 @@ strong {
   margin-top: 1rem;
   color: var(--accent);
 }
+
 .linklist {
   display: flex;
   flex-wrap: wrap;
@@ -344,6 +345,7 @@ strong {
 .linklist__link:hover {
   text-decoration-color: var(--accent);
 }
+
 .project__tags--inline {
   display: flex;
   flex-wrap: wrap;
