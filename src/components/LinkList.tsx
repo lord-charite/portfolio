@@ -6,12 +6,14 @@ interface LinkListProps {
   links: readonly ProjectLink[];
 }
 
-/** Row of outbound links — papers, repos, demos — under a card's copy. */
+/** Row of outbound links - papers, repos, demos - under a card's copy. */
 export class LinkList extends Component<LinkListProps> {
   render(): ReactNode {
     const { links } = this.props;
 
-    if (links.length === 0) return null;
+    if (links.length === 0) {
+      return null;
+    }
 
     return (
       <div className="linklist">
