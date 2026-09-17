@@ -29,6 +29,7 @@ export class Recognition extends Component<RecognitionProps> {
               <div>
                 <p className="award__title">{award.title}</p>
                 <p className="award__detail">{award.detail}</p>
+                <LinkList links={award.links} />
               </div>
             </Reveal>
           ))}
