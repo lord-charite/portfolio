@@ -6,6 +6,8 @@
  * mutate shared data while rendering.
  */
 
+import { ProjectLink } from "./ProjectLink";
+
 export type ProjectCategory = "biomedical" | "computer-science";
 
 export interface ProjectInit {
@@ -16,6 +18,7 @@ export interface ProjectInit {
   tags: string[];
   category: ProjectCategory;
   note?: string;
+  links?: ProjectLink[];
 }
 
 export class Project {
@@ -26,6 +29,7 @@ export class Project {
   readonly tags: readonly string[];
   readonly category: ProjectCategory;
   readonly note?: string;
+  readonly links: readonly ProjectLink[];
 
   constructor(init: ProjectInit) {
     this.index = init.index;
@@ -35,6 +39,8 @@ export class Project {
     this.tags = Object.freeze([...init.tags]);
     this.category = init.category;
     this.note = init.note;
+    this.links = Object.freeze([...(init.links ?? [])]);
+    
   }
 
   /** Stable key for React lists — derived from the title, not the array position. */
@@ -47,6 +53,10 @@ export class Project {
 
   hasNote(): this is Project & { note: string } {
     return typeof this.note === "string" && this.note.length > 0;
+  }
+
+  hasLinks(): boolean {
+    return this.links.length > 0;
   }
 
   belongsTo(category: ProjectCategory): boolean {
