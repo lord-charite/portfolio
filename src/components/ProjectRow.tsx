@@ -1,5 +1,5 @@
 import { Component, type ReactNode } from "react";
-
+import { LinkList } from "./LinkList";
 import type { Project } from "../models/Project";
 import { Reveal } from "./Reveal";
 import { TagList } from "./TagList";
@@ -25,6 +25,7 @@ export class ProjectRow extends Component<ProjectRowProps> {
           {project.hasNote() ? (
             <p className="label project__note">▶ {project.note}</p>
           ) : null}
+          <LinkList links={project.links} />
           <TagList tags={project.tags} variant="inline" />
         </div>
 
