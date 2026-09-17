@@ -23,7 +23,7 @@ export class Connect extends Component<ConnectProps> {
         <SectionHead title="Connect" />
 
         <Reveal as="p" className="connect__statement">
-          If you are passionate about healthcare and biotech, let's connect.
+          If you are passionate about healthcare innovation, let's connect!
         </Reveal>
 
         <ul className="connect__list">
