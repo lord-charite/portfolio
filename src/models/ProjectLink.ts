@@ -1,5 +1,6 @@
 /**
- * An outbound or in-site link attached to a Project — a paper, repo, or demo.
+ * An outbound or in-site link attached to a Project or Award - a paper,
+ * repo, or demo.
  *
  * Mirrors SocialLink: external-ness is derived from the href rather than
  * passed in, so a relative path to a PDF in public/ opens in the same tab
@@ -20,7 +21,7 @@ export class ProjectLink {
     this.href = init.href;
   }
 
-  /** Stable key for React lists — hrefs are unique within a project. */
+  /** Stable key for React lists - hrefs are unique within a card. */
   get id(): string {
     return this.href;
   }
