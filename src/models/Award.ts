@@ -10,10 +10,12 @@ export interface AwardInit {
 export class Award {
   readonly title: string;
   readonly detail: string;
+  readonly links: readonly ProjectLink[];
 
   constructor(init: AwardInit) {
     this.title = init.title;
     this.detail = init.detail;
+    this.links = Object.freeze([...(init.links ?? [])]);
   }
 
   get id(): string {
@@ -21,6 +23,10 @@ export class Award {
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
+  }
+
+  hasLinks(): boolean {
+    return this.links.length > 0;
   }
 
   /** Marker shown in the left rail: A1, A2, A3… */
