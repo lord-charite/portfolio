@@ -85,15 +85,7 @@ export class PortfolioRepository {
           "Modeled actor co-appearance networks as an unweighted undirected graph and computed shortest-path distances (Bacon Numbers) between any actor and Kevin Bacon using Breadth-First Search. Supported interactive queries for path reconstruction and average network separation statistics.",
         tags: ["Java", "Graph Theory", "BFS", "Adjacency List", "CLI"],
       }),
-      new Project({
-        index: "VIII.",
-        category: "computer-science",
-        title: "Sudoku",
-        subtitle: "Interactive Terminal Game with Constraint Validation",
-        description:
-          "Built a complete Sudoku game engine in C featuring board initialization, user move input, and real-time legality checking across rows, columns, and 3×3 subgrids. Implemented constraint-satisfaction validation using 2D arrays and bitmasking, with a solve-assist mode using backtracking search.",
-        tags: ["C", "Backtracking", "Bitmasking", "Terminal UI"],
-      }),
+
     ]);
 
     this.awards = Object.freeze([
@@ -125,8 +117,8 @@ export class PortfolioRepository {
       }),
       new SocialLink({
         label: "Substack",
-        href: "https://substack.com/",
-        handle: "writing",
+        href: "https://interviwedwiththem.substack.com/",
+        handle: " Healthcare + AI",
       }),
       new SocialLink({
         label: "Publications",
@@ -174,9 +166,10 @@ export class PortfolioRepository {
     return [
       "Business Development.",
       "Life Sciences Analyst.",
-      "Biomedical Research.",
+      "Healthcare Innovation.",
       "Global Health.",
       "Writer.",
+      "Healthcare + AI."
     ];
   }
 }
